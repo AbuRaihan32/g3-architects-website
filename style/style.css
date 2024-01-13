@@ -208,7 +208,7 @@ nav>ul>li>a {
 }
 
 .card-title {
-    color:#424242;
+    color: #424242;
     font-size: 2.5rem;
     font-weight: 600;
 }
@@ -219,7 +219,38 @@ nav>ul>li>a {
 
 
 /* start sponsors section styles */
+.sponsors-section-container {
+    padding: 50px 250px;
+    text-align: center;
+}
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.logo-container img {
+    width: 130px;
+    height: 50px;
+}
+
+/* :start footer section styles */
+
+footer {
+    padding: 50px 250px;
+}
+
+footer>h3 {
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    padding: 40px;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 
@@ -285,14 +316,21 @@ nav>ul>li>a {
         bottom: -110px;
         left: 70px;
     }
-    .some-section-container{
+
+    .some-section-container,
+    .sponsors-section-container {
         padding: 10px;
         margin-top: 100px;
     }
-    .last-card-container{
+
+    .last-card-container,
+    .logo-container {
         flex-direction: column;
         margin-top: 30px;
         gap: 20px;
+    }
+    footer {
+        padding: 20px 10px;
     }
 
 }
@@ -345,10 +383,26 @@ nav>ul>li>a {
     .image-btn {
         position: static;
     }
-    .some-section-container{
+
+    .some-section-container {
         padding: 20px;
     }
-    .last-card-container{
+
+    .last-card-container {
         margin-top: 30px;
     }
+
+    .logo-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .logo-container img {
+        display: block;
+        width: 100%;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+
 }
